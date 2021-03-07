@@ -1,0 +1,158 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  body{
+    background: rgb(100, 98, 98);
+    margin: 0px;
+    padding: 0px;
+}
+.header
+{
+    background-color: lightseagreen;
+    padding: 80px;
+    margin: 12px;
+    text-align: center;
+    color: white;
+    border: 3px red;
+    box-shadow: 5px 10px rgb(0, 0, 0);
+    width: 98%;
+}
+/*  navbar starts the  coding llike here  */
+ .navbar
+{
+    overflow: hidden;
+    background-color:seagreen;
+    margin-top: 8px;
+    
+}
+.navbar a
+{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.navbar a.right {
+    float: right;
+  }
+
+  .navbar a:hover
+  {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /*  row --------------------*/
+
+  .row
+  {
+      display: -ms-flexbox;
+     
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+  .left_side
+  {
+      background-color: darkslateblue;
+      color: rgb(0, 0, 0);
+      -ms-flex: 30%;
+      flex: 30%;
+      padding: 20px;
+  }
+  .main
+  {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: rgb(5, 117, 151);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+.fakeimg
+{
+    background-color: rgba(219, 209, 209, 0.856);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer
+{
+    padding: 20px;
+    text-align: center;
+    background: darksalmon;
+}
+
+/*.social-area{
+
+	transform:translate(-50%,-50%);
+	
+}*/
+.footer i{
+	width:40px;
+	height:40px;
+	padding:5px;
+	margin:5px;
+	box-shadow: 1px 1px 5px rbga(0,0,0,0.8);
+	color:#fff;
+	font-size:30px;
+	border:0.1px;
+    border-radius: 10px  ;
+ 	
+}
+
+
+.footer i:nth-child(2)
+{
+    background: rgb(20, 83, 255);
+}
+
+.footer i:nth-child(3)
+{
+    background: rgb(248, 1, 1);
+}
+
+.footer i:nth-child(4)
+{
+    background: rgb(3, 224, 14);
+}
+.footer i:nth-child(5)
+{
+    background: rgb(27, 124, 252);
+}
+
+.footer p i
+{
+    font-size: 25px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  @ screeen comand line are here    */
+@media screen and (max-width: 700px)
+{
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+    }
+}
